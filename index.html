@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/png" href="./src/images/icons8-favicon.png" />
+  <link rel="stylesheet" href="src/css/style.css" />
+  <title>[S11] Dolibarr App 1.1.0</title>
+</head>
+
+<body>
+  <section id="authenticationSection">
+    <h1>Identification Dolibarr App</h1>
+
+    <form method="POST" id="authenticationForm">
+      <div>
+        Utilisateur
+        <input type="text" name="login" id="login">
+      </div>
+      <br />
+
+      <div>
+        Mot de passe
+        <input type="password" name="pwd" id="pwd">
+      </div>
+      <br />
+
+      <div>
+        IP Dolibarr
+        <input type="text" name="ipd" id="ipd">
+      </div>
+      <br />
+
+      <div>
+        Sous-dossiers (optionnel)
+        <input type="text" name="sod" id="sod">
+      </div>
+      <br />
+
+      <button type="submit">
+        Se connecter
+      </button>
+    </form>
+  </section>
+
+  <section id="paymentSection">
+    <h1>Envoi Dolibarr App</h1>
+  
+    <form method="POST" id="paymentForm">
+      <div>
+        Libellé :
+        <select name="label" id="label">
+          <option value="Paiement Divers">Paiements divers</option>
+        </select>
+      </div>
+      <br />
+
+      <div>
+        Date paiement :
+        <input type="date" name="date_pai" id="date_pai" />
+      </div>
+      <br />
+
+      <div>
+        Mode de règlement :
+        <select name="mode_reglement" id="mode_reglement">
+          <option value="CB">Carte Banquaire</option>
+        </select>
+      </div>
+      <br />
+
+      <div>
+        Numéro :
+        <input type="text" name="number" id="number">
+      </div>
+      <br />
+
+      <div>
+        Compte banquaire :
+        <select name="bank" id="bank"></select>
+      </div>
+      <br />
+
+      <div>
+        Somme (ajouter - pour un débit)
+        <input type="text" name="somme" id="somme">
+      </div>
+      <br />
+
+      <input type="file" id="fileInput" />
+      <button type="submit">Valider</button>
+    </form>
+  </section>
+
+  <script src="src/js/main.js"></script>
+</body>
+
+</html>
