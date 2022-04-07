@@ -142,4 +142,5 @@ fileInput.addEventListener('change', (input) => {
   }
 });
 
+
 hideElement('paymentSection');
